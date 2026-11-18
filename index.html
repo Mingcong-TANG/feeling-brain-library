@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Feeling Brain Library</title>
+<meta name="description" content="An interactive case library and assessment reference on the neuropsychology of affective decision-making.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Shantell+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+    <filter id="sketch" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/></filter>
+  </defs></svg>
+  <header class="top">
+    <div class="intro">
+      <h1><span class="hl">The Feeling Brain Library</span></h1>
+      <div class="palette-band sketch" aria-hidden="true"><span style="background:var(--cA)"></span><span style="background:var(--cB)"></span><span style="background:var(--cC)"></span><span style="background:var(--cD)"></span><span style="background:var(--cE)"></span><span style="background:var(--cF)"></span></div>
+      <p class="lede">A case library and assessment reference on the neuropsychology of affective decision-making. Explore how damage to brain systems for value, threat, reward, body states, expression and awareness changes reward learning, decisions and emotional behavior.</p>
+      <p class="note">Each case takes about 8 to 10 minutes. All patient profiles except Phineas Gage are illustrative composites based on published cases, not real patient records.</p>
+    </div>
+    <div class="buddy">
+      <p class="say" id="buddy-say" aria-live="polite"><span id="buddy-q">We are not thinking machines that feel; we are feeling machines that think.</span><span class="by" id="buddy-by">attributed to Antonio Damasio</span></p>
+      <button type="button" class="buddy-btn" id="buddy-btn" aria-label="Show another saying" title="Tap me for another saying">
+      <svg viewBox="0 0 176 136" aria-hidden="true">
+        <g class="sketch">
+          <path class="b-stem b-ink" d="M98 88 C99 102 101 112 105 124 L119 124 C114 112 112 100 113 90 Z"/>
+          <path class="b-fill b-ink" d="M110 92 C112 80 140 78 148 90 C154 100 146 110 132 110 C120 110 109 104 110 92 Z"/>
+          <path class="b-ink" d="M116 94 C124 88 138 88 145 94 M118 101 C126 96 136 96 143 101"/>
+          <path class="b-fill b-ink" d="M27 70 C18 50 33 26 62 19 C92 11 128 19 142 42 C152 58 147 76 132 81 C124 84 114 82 106 86 C98 98 76 102 62 95 C55 92 53 86 55 81 C43 84 31 80 27 70 Z"/>
+          <path class="b-ink" d="M56 81 C70 76 90 75 106 68"/>
+          <path class="b-ink" d="M93 17 C89 26 95 32 91 40 M118 34 C112 42 122 48 116 56 M46 31 C54 30 57 37 52 41 M130 56 C125 60 128 66 123 69"/>
+          <path class="b-ink" d="M27 66 C19 64 13 56 12 47"/>
+          <path class="b-amy" d="M70 86 C73 80 83 79 87 84 C89 89 80 93 74 92 C70 91 68 89 70 86 Z"/>
+          <path class="b-ink" d="M6 38 l4 4 M12 32 l1 6 M2 46 l6 0" opacity=".7"/>
+        </g>
+        <ellipse class="b-cheek" cx="50" cy="63" rx="7" ry="4.5"/><ellipse class="b-cheek" cx="92" cy="61" rx="7" ry="4.5"/>
+        <circle class="b-dot" cx="58" cy="53" r="3.4"/><circle class="b-dot" cx="84" cy="52" r="3.4"/>
+        <path class="b-ink" d="M64 60 Q71 68 79 60"/>
+      </svg>
+      </button>
+    </div>
+  </header>
+  <nav class="index" aria-label="Module sections"><ul id="tabs"></ul></nav>
+  <main id="main"></main>
+  <footer>
+    <p class="note"><em>Note.</em> This repository is for innovation project PS 829 only.</p>
+  </footer>
+</div>
+<script src="data/clusters.js"></script>
+<script src="data/cases.js"></script>
+<script src="data/assessments.js"></script>
+<script src="data/coverage.js"></script>
+<script src="data/core.js"></script>
+<script src="data/news.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

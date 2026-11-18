@@ -1,0 +1,274 @@
+{
+  "lookback_days": 120,
+  "max_per_topic": 6,
+  "max_items": 1000,
+  "topics": [
+    {
+      "id": "vmpfc",
+      "group": "Brain systems",
+      "label": "Ventromedial and orbitofrontal cortex",
+      "cluster": "A",
+      "query": "((ventromedial[ti] OR orbitofrontal[ti] OR prefrontal[ti]) AND (lesion[tiab] OR lesions[tiab] OR damage[tiab]) AND (decision[tiab] OR emotion[tiab] OR social[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "amygdala",
+      "group": "Brain systems",
+      "label": "Amygdala",
+      "cluster": "B",
+      "query": "(amygdala[ti] AND (lesion[tiab] OR lesions[tiab] OR damage[tiab] OR \"Urbach-Wiethe\"[tiab] OR resection[tiab]) AND (fear[tiab] OR emotion[tiab] OR emotional[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "striatum",
+      "group": "Brain systems",
+      "label": "Striatum and dopamine",
+      "cluster": "C",
+      "query": "((striatum[ti] OR striatal[ti] OR dopamine[ti] OR \"basal ganglia\"[ti]) AND (reward[tiab] OR motivation[tiab]) AND (patients[tiab] OR lesion[tiab] OR disease[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "insula",
+      "group": "Brain systems",
+      "label": "Insula and interoception",
+      "cluster": "D",
+      "query": "((insula[ti] OR insular[ti] OR interoception[ti] OR interoceptive[ti]) AND (lesion[tiab] OR stroke[tiab] OR patients[tiab]) AND (emotion[tiab] OR craving[tiab] OR risk[tiab] OR disgust[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "acc",
+      "group": "Brain systems",
+      "label": "Anterior cingulate and medial frontal cortex",
+      "cluster": "D",
+      "query": "((\"anterior cingulate\"[ti] OR \"medial frontal\"[ti] OR \"medial prefrontal\"[ti]) AND (lesion[tiab] OR lesions[tiab] OR stroke[tiab]) AND (apathy[tiab] OR motivation[tiab] OR effort[tiab] OR emotion[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "laterality",
+      "group": "Brain systems",
+      "label": "Hemispheric specialization for emotion",
+      "cluster": "E",
+      "query": "((\"right hemisphere\"[ti] OR \"left hemisphere\"[ti] OR hemispheric[ti] OR lateralization[ti]) AND (emotion[tiab] OR emotional[tiab] OR prosody[tiab] OR mood[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "cerebellum",
+      "group": "Brain systems",
+      "label": "Cerebellum and emotion",
+      "cluster": "E",
+      "query": "((cerebellum[ti] OR cerebellar[ti]) AND (emotion[tiab] OR emotional[tiab] OR affective[tiab] OR \"social cognition\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "network",
+      "group": "Brain systems",
+      "label": "Brain networks and lesion network mapping",
+      "cluster": "",
+      "query": "((\"lesion network mapping\"[tiab] OR \"lesion-symptom mapping\"[tiab] OR disconnection[ti]) AND (emotion[tiab] OR behavior[tiab] OR \"decision-making\"[tiab] OR mood[tiab] OR depression[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "dm_risk",
+      "group": "Functions",
+      "label": "Decision-making under risk and ambiguity",
+      "cluster": "A",
+      "query": "((\"decision-making\"[ti] OR gambling[ti] OR \"risk-taking\"[ti]) AND (risk[tiab] OR ambiguity[tiab] OR reward[tiab]) AND (lesion[tiab] OR \"brain injury\"[tiab] OR dementia[tiab] OR \"Parkinson's disease\"[tiab]) AND (cognitive[tiab] OR emotional[tiab] OR neuropsychological[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "reward_learning",
+      "group": "Functions",
+      "label": "Reward and punishment learning",
+      "cluster": "C",
+      "query": "((\"reinforcement learning\"[ti] OR \"reward learning\"[ti] OR \"reversal learning\"[ti] OR \"feedback learning\"[ti]) AND (patients[tiab] OR lesion[tiab] OR disease[tiab]) AND (striatal[tiab] OR dopamine[tiab] OR cognitive[tiab] OR neural[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "loss",
+      "group": "Functions",
+      "label": "Loss aversion, regret and counterfactual emotion",
+      "cluster": "A",
+      "query": "((\"loss aversion\"[ti] OR \"anticipated regret\"[tiab] OR counterfactual[ti]) AND (lesion[tiab] OR orbitofrontal[tiab] OR amygdala[tiab] OR brain[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "moral",
+      "group": "Functions",
+      "label": "Moral judgment and social decision-making",
+      "cluster": "A",
+      "query": "((moral[ti] OR \"ultimatum game\"[tiab] OR \"trust game\"[tiab]) AND (lesion[tiab] OR prefrontal[tiab] OR dementia[tiab] OR \"brain injury\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "emotion_recog",
+      "group": "Functions",
+      "label": "Emotion recognition",
+      "cluster": "B",
+      "query": "((\"emotion recognition\"[ti] OR \"facial expression\"[ti] OR \"facial emotion\"[ti] OR \"emotional prosody\"[ti]) AND (lesion[tiab] OR stroke[tiab] OR dementia[tiab] OR \"brain injury\"[tiab] OR \"Parkinson's disease\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "empathy",
+      "group": "Functions",
+      "label": "Empathy and theory of mind",
+      "cluster": "F",
+      "query": "((empathy[ti] OR \"theory of mind\"[ti] OR \"social cognition\"[ti]) AND (lesion[tiab] OR dementia[tiab] OR \"brain injury\"[tiab] OR stroke[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "fear_memory",
+      "group": "Functions",
+      "label": "Fear learning and emotional memory",
+      "cluster": "B",
+      "query": "((\"fear conditioning\"[ti] OR \"emotional memory\"[ti] OR \"threat learning\"[ti] OR \"fear learning\"[ti]) AND (patients[tiab] OR lesion[tiab] OR amygdala[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "apathy",
+      "group": "Functions",
+      "label": "Apathy, motivation and effort",
+      "cluster": "C",
+      "query": "((apathy[ti] OR abulia[ti] OR \"effort-based\"[ti]) AND (stroke[tiab] OR dementia[tiab] OR \"Parkinson's disease\"[tiab] OR lesion[tiab] OR \"brain injury\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "impulsivity",
+      "group": "Functions",
+      "label": "Impulsivity and impulse-control disorders",
+      "cluster": "C",
+      "query": "((impulsivity[ti] OR impulsive[ti] OR \"impulse control\"[ti] OR disinhibition[ti]) AND (lesion[tiab] OR \"Parkinson's disease\"[tiab] OR dementia[tiab] OR \"brain injury\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "insight",
+      "group": "Functions",
+      "label": "Anosognosia and insight",
+      "cluster": "E",
+      "query": "((anosognosia[ti] OR \"self-awareness\"[ti] OR unawareness[ti]) AND (stroke[tiab] OR dementia[tiab] OR \"brain injury\"[tiab] OR hemiplegia[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "alexithymia",
+      "group": "Functions",
+      "label": "Alexithymia and emotion regulation",
+      "cluster": "E",
+      "query": "((alexithymia[ti] OR \"emotion regulation\"[ti]) AND (lesion[tiab] OR \"brain injury\"[tiab] OR stroke[tiab] OR dementia[tiab] OR epilepsy[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "expression",
+      "group": "Functions",
+      "label": "Emotional expression and pseudobulbar affect",
+      "cluster": "E",
+      "query": "((\"pseudobulbar affect\"[tiab] OR \"pathological laughing\"[tiab] OR \"pathological crying\"[tiab] OR \"emotional lability\"[ti] OR hypomimia[ti])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "tbi",
+      "group": "Conditions",
+      "label": "Traumatic brain injury",
+      "cluster": "F",
+      "query": "((\"traumatic brain injury\"[ti] OR concussion[ti]) AND (\"social cognition\"[tiab] OR emotion[tiab] OR emotional[tiab] OR personality[tiab] OR \"decision-making\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "stroke_mood",
+      "group": "Conditions",
+      "label": "Stroke: mood and behavior",
+      "cluster": "E",
+      "query": "(stroke[ti] AND (\"post-stroke depression\"[tiab] OR \"poststroke depression\"[tiab] OR mania[tiab] OR apathy[tiab] OR emotionalism[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "bvftd",
+      "group": "Conditions",
+      "label": "Behavioral-variant frontotemporal dementia",
+      "cluster": "F",
+      "query": "((\"behavioral variant\"[tiab] OR \"behavioural variant\"[tiab] OR bvFTD[tiab]) AND frontotemporal[tiab]) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "svppa",
+      "group": "Conditions",
+      "label": "Semantic dementia and right temporal variant",
+      "cluster": "F",
+      "query": "((\"semantic dementia\"[tiab] OR \"semantic variant\"[tiab] OR \"right temporal variant\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "alzheimer",
+      "group": "Conditions",
+      "label": "Alzheimer's disease: behavior, finances and scams",
+      "cluster": "F",
+      "query": "((\"Alzheimer's disease\"[tiab] OR \"mild cognitive impairment\"[tiab] OR dementia[ti]) AND (financial[ti] OR scam[ti] OR fraud[ti] OR \"decision-making\"[ti] OR exploitation[ti])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "parkinson",
+      "group": "Conditions",
+      "label": "Parkinson's disease: impulse control and DBS",
+      "cluster": "C",
+      "query": "(\"Parkinson's disease\"[tiab] AND (\"impulse control\"[tiab] OR \"dopamine agonist\"[tiab] OR \"deep brain stimulation\"[ti] OR apathy[ti] OR gambling[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "huntington",
+      "group": "Conditions",
+      "label": "Huntington's disease: emotion and behavior",
+      "cluster": "C",
+      "query": "(\"Huntington's disease\"[tiab] AND (emotion[ti] OR emotional[ti] OR irritability[ti] OR apathy[ti] OR \"social cognition\"[ti] OR neuropsychiatric[ti])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "addiction",
+      "group": "Conditions",
+      "label": "Addiction and decision-making",
+      "cluster": "C",
+      "query": "((addiction[ti] OR \"substance use disorder\"[ti] OR \"gambling disorder\"[ti]) AND (\"decision-making\"[tiab] OR \"delay discounting\"[tiab] OR prefrontal[tiab] OR insula[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "epilepsy",
+      "group": "Conditions",
+      "label": "Epilepsy and temporal lobe surgery",
+      "cluster": "B",
+      "query": "((epilepsy[ti] OR lobectomy[ti] OR \"temporal lobe\"[ti]) AND (emotion[tiab] OR emotional[tiab] OR fear[tiab] OR \"social cognition\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "encephalitis",
+      "group": "Conditions",
+      "label": "Encephalitis and Kluver-Bucy syndrome",
+      "cluster": "B",
+      "query": "((\"Kluver-Bucy\"[tiab] OR \"herpes simplex encephalitis\"[tiab] OR \"autoimmune encephalitis\"[tiab] OR \"anti-NMDA receptor encephalitis\"[tiab]) AND (behavioral[tiab] OR psychiatric[tiab] OR emotional[tiab] OR neuropsychological[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "ms_als",
+      "group": "Conditions",
+      "label": "Multiple sclerosis and ALS: social and emotional change",
+      "cluster": "F",
+      "query": "((\"multiple sclerosis\"[ti] OR \"amyotrophic lateral sclerosis\"[ti] OR \"motor neuron disease\"[ti]) AND (\"social cognition\"[tiab] OR apathy[tiab] OR \"emotion recognition\"[tiab] OR \"theory of mind\"[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "korsakoff",
+      "group": "Conditions",
+      "label": "Korsakoff syndrome and alcohol-related brain damage",
+      "cluster": "F",
+      "query": "((Korsakoff[tiab] OR \"alcohol-related brain damage\"[tiab] OR \"Wernicke encephalopathy\"[tiab]) AND (cognitive[ti] OR decision[tiab] OR emotional[tiab] OR memory[ti] OR neuropsychological[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "delusion",
+      "group": "Conditions",
+      "label": "Capgras and delusional misidentification",
+      "cluster": "E",
+      "query": "((Capgras[tiab] OR \"delusional misidentification\"[tiab] OR confabulation[tiab] OR Fregoli[tiab])) NOT (rats[ti] OR mice[ti] OR \"artificial intelligence\"[tiab] OR \"language model\"[tiab] OR \"language models\"[tiab])"
+    },
+    {
+      "id": "assessment",
+      "group": "Assessment and methods",
+      "label": "New social-emotional assessment tools",
+      "cluster": "",
+      "query": "((validation[ti] OR psychometric[ti] OR \"normative data\"[ti]) AND (\"social cognition\"[ti] OR apathy[ti] OR \"emotion recognition\"[ti] OR \"theory of mind\"[ti] OR neuropsychological[ti]) AND (patients[tiab] OR dementia[tiab] OR \"brain injury\"[tiab] OR stroke[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "igt",
+      "group": "Assessment and methods",
+      "label": "Iowa Gambling Task and lab decision tasks",
+      "cluster": "A",
+      "query": "((\"Iowa Gambling Task\"[tiab] OR \"Cambridge Gamble\"[tiab] OR \"Game of Dice\"[tiab]) AND (lesion[tiab] OR \"Parkinson's disease\"[tiab] OR dementia[tiab] OR \"brain injury\"[tiab] OR prefrontal[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "computational",
+      "group": "Assessment and methods",
+      "label": "Computational modeling of choice in patients",
+      "cluster": "",
+      "query": "((\"computational model\"[tiab] OR \"computational modeling\"[tiab] OR \"drift diffusion\"[tiab]) AND (lesion[tiab] OR \"Parkinson's disease\"[tiab] OR dementia[tiab] OR \"brain injury\"[tiab]) AND (\"decision-making\"[tiab] OR reward[tiab] OR behavior[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "psychophys",
+      "group": "Assessment and methods",
+      "label": "Psychophysiology: skin conductance, heart rate, pupil",
+      "cluster": "",
+      "query": "((\"skin conductance\"[ti] OR electrodermal[ti] OR \"heart rate variability\"[ti] OR pupillometry[ti] OR autonomic[ti]) AND (emotion[tiab] OR emotional[tiab] OR \"decision-making\"[tiab]) AND (lesion[tiab] OR \"brain injury\"[tiab] OR dementia[tiab] OR stroke[tiab])) NOT (rats[ti] OR mice[ti])"
+    },
+    {
+      "id": "capacity",
+      "group": "Assessment and methods",
+      "label": "Decision-making capacity and financial capacity",
+      "cluster": "F",
+      "query": "((\"decision-making capacity\"[tiab] OR \"financial capacity\"[tiab] OR \"capacity to consent\"[tiab] OR \"financial exploitation\"[tiab]) AND (dementia[tiab] OR cognitive[tiab] OR \"brain injury\"[tiab] OR stroke[tiab])) NOT (rats[ti] OR mice[ti])"
+    }
+  ],
+  "note": "Queries avoid wildcards and stay under 20 boolean operators so the same search works through the claude.ai PubMed connector and E-utilities. Key terms are required in the title or abstract to keep results on topic; rat and mouse studies are excluded."
+}
