@@ -6,7 +6,7 @@ brain systems affect reward learning, decision-making and emotional behavior.
 
 *Note.* This repository is for innovation project PS 829 only.
 
-- **Live site:** https://mingcong-tang.github.io/feeling-brain-library/ (after GitHub Pages is turned on, see below)
+- **Live site:** https://mingcong-tang.github.io/feeling-brain-library/
 - **Repository:** https://github.com/Mingcong-TANG/feeling-brain-library
 
 ## What's inside
